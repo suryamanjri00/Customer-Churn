@@ -1,0 +1,74 @@
+# Customer Churn Prediction 
+This project analyzes and predicts customer churn using the Telco Customer Churn dataset. It aims to identify key factors influencing churn and build machine learning models that can help telecom companies retain customers more effectively.
+
+# Project Overview 
+Customer churn refers to when customers stop using a company’s service. In this project, we:
+- Explore and clean customer data.
+- Analyze relationships between demographic and service-related features.
+- Build predictive models using machine learning algorithms.
+- Evaluate model performance using accuracy and classification metrics.
+
+# Dataset 
+Source: Telco Customer Churn Dataset (Telco-Customer-Churn.csv)
+Key Features:
+- customerID – Unique customer identifier
+- gender, SeniorCitizen, Partner, Dependents – Demographics
+- tenure, Contract, PaymentMethod, MonthlyCharges, TotalCharges – Account information
+-InternetService, TechSupport, StreamingTV, etc. – Services subscribed
+- Churn – Target variable (Yes/No)
+
+# Data Preprocessing 
+- Handled missing values and converted data types
+- Encoded categorical variables
+- Scaled numerical features using StandardScaler
+- Split dataset into train and test sets
+
+# Exploratory Data Analysis (EDA)
+Explored key patterns and visualized insights using:
+-Seaborn and Matplotlib
+-Distribution of churn by contract type, payment method, and tenure
+-Correlation between numerical features and churn tendency
+
+# Machine Learning Models
+Implemented and compared:
+- **Logistic Regression**
+- **Decision Tree Classifier**
+** Evaluation Metrics:**
+Accuracy
+Confusion Matrix
+Classification Report (Precision, Recall, F1-score)
+
+# Results #
+Model	Accuracy	Key Insights
+Logistic Regression	~X%	Interpretable, fast, works well with scaled data
+Decision Tree	~Y%	Captures non-linear relationships, risk of overfitting
+
+(Replace X and Y with your observed accuracy scores)
+
+# How to Run
+Prerequisites
+
+**Make sure you have the following installed:**
+'''bash
+pip install pandas numpy seaborn matplotlib scikit-learn
+'''
+**Run the Notebook**
+1. Clone the repository:
+'''bash
+git clone https://github.com/your-username/customer-churn-prediction.git
+cd customer-churn-prediction
+'''
+2. Open Jupyter Notebook:
+jupyter notebook "Customer Churn.ipynb"
+3. Run all cells to reproduce results.
+
+# Technologies Used
+- Python
+- Pandas, NumPy
+- Matplotlib, Seaborn
+- Scikit-learn
+
+# Future Enhancements
+- Add Random Forest and XGBoost models
+- Hyperparameter tuning using GridSearchCV
+- Deploy model as a web app using Flask or Streamlit
